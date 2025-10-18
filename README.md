@@ -2,103 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Nama Kamu</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Renpa | Full Stack Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans">
-  <!-- Navbar -->
-  <nav class="bg-gray-800 shadow p-4 flex justify-between items-center sticky top-0 z-50">
-    <h1 class="text-2xl font-bold text-blue-400">Fullstack Dev</h1>
-    <div class="space-x-4">
-      <a href="#about" class="hover:text-blue-400">About</a>
-      <a href="#skills" class="hover:text-blue-400">Skills</a>
-      <a href="#projects" class="hover:text-blue-400">Projects</a>
-      <a href="#contact" class="hover:text-blue-400">Contact</a>
+<body class="bg-black text-white font-sans">
+
+  <!-- HERO -->
+  <header class="min-h-screen flex flex-col justify-center items-center text-center px-4 fade-in">
+    <img src="foto-profil.jpg" alt="Foto Profil" class="w-32 h-32 rounded-full mb-4 border-4 border-blue-400 shadow-lg">
+    <h1 class="text-4xl md:text-5xl font-bold">Renpa</h1>
+    <p class="text-blue-400 text-lg mt-2">Full Stack Developer & Data Enthusiast</p>
+    <div class="mt-6 flex gap-4">
+      <a href="https://wa.me/62xxxxxxxxxxx" target="_blank" class="bg-blue-500 px-5 py-2 rounded-full hover:bg-blue-600 transition">WhatsApp</a>
+      <a href="mailto:emailkamu@gmail.com" class="border border-blue-500 px-5 py-2 rounded-full hover:bg-blue-500 hover:text-white transition">Email</a>
     </div>
-  </nav>
+    <a href="#projects" class="mt-10 text-blue-400 hover:underline">↓ Lihat Project</a>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="text-center py-20 bg-gradient-to-b from-gray-900 to-gray-800">
-    <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-blue-400">
-      <img src="https://via.placeholder.com/150" alt="Foto Profil" class="w-full h-full object-cover" />
-    </div>
-    <h2 class="text-4xl font-bold mb-4">Hi, I'm <span class="text-blue-400">[RANDI ZIKRA]</span></h2>
-    <p class="text-lg mb-6 text-gray-300">Full Stack Developer & Data Entry Specialist</p>
-    <a href="#projects" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">Lihat Project</a>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="max-w-4xl mx-auto py-16 px-4">
-    <h3 class="text-2xl font-bold mb-4 text-blue-400">Tentang Saya</h3>
-    <p class="text-gray-300 leading-relaxed">
-      Saya seorang mahasiswa yang bersemangat membangun aplikasi web modern dan juga memiliki keahlian dalam data entry dan pengolahan data. Fokus saya adalah membuat solusi digital yang fungsional, cepat, dan mudah digunakan.
-    </p>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="bg-gray-800 py-16">
-    <div class="max-w-5xl mx-auto px-4">
-      <h3 class="text-2xl font-bold mb-8 text-center text-blue-400">Skills</h3>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div><p class="font-semibold">HTML5</p></div>
-        <div><p class="font-semibold">CSS3</p></div>
-        <div><p class="font-semibold">JavaScript (ES6+)</p></div>
-        <div><p class="font-semibold">React.js</p></div>
-        <div><p class="font-semibold">Next.js</p></div>
-        <div><p class="font-semibold">Tailwind CSS</p></div>
-        <div><p class="font-semibold">Node.js</p></div>
-        <div><p class="font-semibold">PHP / Laravel</p></div>
-        <div><p class="font-semibold">Python (Flask/FastAPI)</p></div>
-        <div><p class="font-semibold">MySQL / PostgreSQL</p></div>
-        <div><p class="font-semibold">MongoDB</p></div>
-        <div><p class="font-semibold">Git & GitHub</p></div>
-        <div><p class="font-semibold">Excel / Google Sheets</p></div>
-        <div><p class="font-semibold">Pandas (Python)</p></div>
-        <div><p class="font-semibold">CMS / WordPress</p></div>
-        <div><p class="font-semibold">Data Cleaning</p></div>
+  <!-- SKILLS -->
+  <section id="skills" class="py-16 bg-gray-950 px-6 fade-in">
+    <h2 class="text-3xl font-bold text-center mb-10">Skills</h2>
+    <div class="max-w-3xl mx-auto space-y-6">
+      <div>
+        <p class="mb-2">HTML / CSS / JavaScript</p>
+        <div class="w-full bg-gray-800 rounded-full h-3">
+          <div class="bg-blue-500 h-3 rounded-full w-[90%]"></div>
+        </div>
+      </div>
+      <div>
+        <p class="mb-2">PHP / Python</p>
+        <div class="w-full bg-gray-800 rounded-full h-3">
+          <div class="bg-blue-500 h-3 rounded-full w-[80%]"></div>
+        </div>
+      </div>
+      <div>
+        <p class="mb-2">Frontend & Backend Framework</p>
+        <div class="w-full bg-gray-800 rounded-full h-3">
+          <div class="bg-blue-500 h-3 rounded-full w-[75%]"></div>
+        </div>
+      </div>
+      <div>
+        <p class="mb-2">Data Entry & Admin Tools</p>
+        <div class="w-full bg-gray-800 rounded-full h-3">
+          <div class="bg-blue-500 h-3 rounded-full w-[85%]"></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="max-w-5xl mx-auto py-16 px-4">
-    <h3 class="text-2xl font-bold mb-8 text-center text-blue-400">Project</h3>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-gray-800 rounded-lg shadow p-4">
-        <img src="https://via.placeholder.com/300x180" alt="Project 1" class="rounded mb-4" />
-        <h4 class="font-bold text-lg mb-2">Project 1</h4>
-        <p class="text-gray-400 text-sm mb-4">Deskripsi singkat project. Bisa berupa aplikasi web, dashboard, atau automation tools.</p>
-        <a href="#" class="text-blue-400 font-semibold hover:underline">Lihat Live</a>
+  <!-- PROJECTS -->
+  <section id="projects" class="py-16 px-6 fade-in">
+    <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Project 1 -->
+      <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/40 transition hover:scale-105">
+        <img src="project1.jpg" alt="Project 1" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+          <p class="text-gray-400 text-sm mb-4">Deskripsi singkat project pertama kamu...</p>
+          <a href="#" target="_blank" class="text-blue-400 hover:underline">View Project →</a>
+        </div>
       </div>
-      <div class="bg-gray-800 rounded-lg shadow p-4">
-        <img src="https://via.placeholder.com/300x180" alt="Project 2" class="rounded mb-4" />
-        <h4 class="font-bold text-lg mb-2">Project 2</h4>
-        <p class="text-gray-400 text-sm mb-4">Deskripsi singkat project kedua.</p>
-        <a href="#" class="text-blue-400 font-semibold hover:underline">Lihat Live</a>
+
+      <!-- Project 2 -->
+      <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/40 transition hover:scale-105">
+        <img src="project2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+          <p class="text-gray-400 text-sm mb-4">Deskripsi singkat project kedua...</p>
+          <a href="#" target="_blank" class="text-blue-400 hover:underline">View Project →</a>
+        </div>
       </div>
-      <div class="bg-gray-800 rounded-lg shadow p-4">
-        <img src="https://via.placeholder.com/300x180" alt="Project 3" class="rounded mb-4" />
-        <h4 class="font-bold text-lg mb-2">Project 3</h4>
-        <p class="text-gray-400 text-sm mb-4">Deskripsi singkat project ketiga.</p>
-        <a href="#" class="text-blue-400 font-semibold hover:underline">Lihat Live</a>
+
+      <!-- Project 3 -->
+      <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/40 transition hover:scale-105">
+        <img src="project3.jpg" alt="Project 3" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Project 3</h3>
+          <p class="text-gray-400 text-sm mb-4">Deskripsi singkat project ketiga...</p>
+          <a href="#" target="_blank" class="text-blue-400 hover:underline">View Project →</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="bg-gradient-to-b from-gray-800 to-gray-900 text-white py-16 text-center">
-    <h3 class="text-2xl font-bold mb-4 text-blue-400">Hubungi Saya</h3>
-    <p class="mb-6 text-gray-300">Tertarik bekerja sama? Kirim pesan langsung ke email saya!</p>
-    <a href="mailto:randypradytia@gmail.com" class="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition">Email Saya</a>
-    <a href="https://wa.me/6289509017068" target="_blank" class="inline-block mt-4 bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition">
-  Hubungi via WhatsApp
-</a>
-
-  </section>
-
-  <footer class="text-center py-4 text-sm text-gray-500">
-    © 2025 Nama Kamu. Dibuat dengan ♥ dan Tailwind CSS.
+  <!-- FOOTER -->
+  <footer class="bg-gray-950 text-center py-6 text-gray-500 text-sm">
+    © 2025 Renpa. Built with ❤️ and TailwindCSS.
   </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      });
+    });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
